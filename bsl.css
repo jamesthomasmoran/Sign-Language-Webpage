@@ -1,0 +1,319 @@
+/*	h tags font,color padding and margins set
+	font stack has many similar fonts and font families incase browser does not support Lucida Sans Unicode
+	font color set with hex value
+	padding of text set defining space filled by container text
+	margin set to define spacing between h tags and other content*/
+h1,h2,h3{																							
+	font-family: "Lucida Sans Unicode","Lucida Grande", "Lucida Sans", Geneva, Verdana, sans-serif;	
+    color:#004b83;																					
+	padding-top:0px;
+	padding-left:10px;
+	padding-right:5px;
+	margin-top:0px;
+	}
+	
+/*	h tags and logo id padding set
+	padding of text set defining space filled by container text*/
+h1,h2,h3,#logo{
+	padding-bottom:5px;
+	}
+	
+	/*ul linguistics class overflow property defined
+	hidden ensures all content in the lingustics class element remains in set positioning*/
+ul.linguistics-text{
+	overflow:hidden;
+    }
+	
+/*	legend and media-caption padding set
+	padding of text set defining space filled by container text*/
+.legend,p.media-caption,p.video-caption{
+	padding:10px;
+	}
+	
+/*	Background colour set with hex value*/
+hr,.nav,.dropdown-content,.sign-language-images{
+	background-color:#004b83;
+	}
+	
+/*	Text aligned to right of respective div for nav class and wiki-source id */
+.nav,#wiki-source{
+	text-align:right;
+	}
+	
+/*	font stack has many similar fonts and font families incase browser does not support Palantino Linotype */
+.nav,.body,.linguistics-text,.legend,p.media-caption,p.video-caption,.sign-language-images,#wiki-source{
+	font-family:Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+	}
+	
+/*	padding of text set defining space filled by container text
+	margin set to define spacing between object and other content */	
+#map,.multi-image,.video{
+	padding-left:20px;
+	margin-bottom:20px;
+    }
+	
+/*	margin set to define spacing between object and other content*/	
+#map,.multi-image,.video,.sign-language-images-spacing{
+	margin-left:20px;
+	}
+	
+/*	margin set to define spacing between object and other content*/	
+#logo,#map,.multi-image,.video,.sign-language-images-spacing{
+	margin-right:20px;
+	}
+
+/*	padding of text set defining space filled by container text */	
+.navigation,.dropdown,.dropdown-content,.body,.linguistics-text,#map,.multi-image,.video{
+	padding-right:20px;
+    }
+ 
+/* 	position set to relative, allowing it to be positioned away from its normal position*/
+h1,h2,h3,#logo,.dropdown,.nav,.multi-image,.video,#map,.sign-language-images{
+	position:relative;
+    }
+	
+/*	objects styled with thesse classes will be positioned on the left of its container */
+img.map-colors,#map{
+	float:left;
+	}
+
+/*	font size set at 12 pixels  */	
+.legend,p.media-caption,p.video-caption,#wiki-source{
+	font-size:12px;
+	}
+
+/*	Background colour set with hex value*/
+body.main,#wiki-source,div{
+	background-color:#ffffff;
+	}
+
+/*	Colour set with hex value*/	
+.nav,.sign-language-images{
+	color:#ffffff;
+	}
+
+/*	padding of text set defining space filled by container text */
+.legend,p.media-caption,p.video-caption{
+	padding-bottom:2px;
+	padding-top:2px;
+	}
+	
+/* display:inline-block allows objects to be positioned next to each other horizontally*/
+.legend,.sign-language-images{
+	display:inline-block;
+	}
+	
+/*	Font made stronger and bolder*/
+#bold,.sign-language-images{
+	font-weight:bold;
+	}
+
+/*	All text set to uppercase*/
+#bold{
+	text-transform:uppercase;
+	}
+	
+/*	border set to only 1 line around object that is filled*/	
+.multi-image,.sign-language-images{
+	border-style:solid;
+	}
+	
+/*	Text aligned to centre of respective div*/
+.multi-image,.video,p.media-caption,p.video-caption,.sign-language-images{
+	text-align:center;
+	}
+	
+/*	padding of text set defining space filled by container text */
+.body{
+	padding-left:10px;
+	}
+
+/*	height of horizonal rule set
+	clear:both removes ability of hr to be wrapped around float*/
+hr{ 
+    height:10px;
+	clear:both;
+	}
+	
+/*	special case height is set lower than general hr
+	The hr will cover 95% of aavailable space in its container*/
+hr.special-map{
+	height:2px;
+	width:95%;
+	}
+
+/*	main class sets min and max width, margins and background colour for body tags
+	min and max width define the range of size in terms of width the object can be
+	margin set to define spacing between object and other content, auto allows body o alway be central
+	Background colour set with hex value*/
+body.main{
+	min-width:510px;
+	max-width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#C7C1C1;
+	}
+
+/*	nav class sets min and max width, margins and padding colour for body tags
+	min and max width define the range of size in terms of width the object can be
+	padding of text set defining space filled by container text
+	margin(top) set to define spacing between object and other content */
+.nav{
+	min-width:510px;
+	max-width:960px;
+	padding: 5px 0px 5px 0px;
+	top:-111px;
+	}
+
+/*	inline allows objects to be aligned horizontally*/
+.navigation{
+	display:inline;
+	}	
+
+a.nav-bar,a.sub-bar { 
+	color:inherit;
+	text-decoration:none;
+	}
+	
+/*	when nav-bar is hovered over and the mult-image and video class used, padding is set
+	padding of text set defining space filled by container text*/
+a.nav-bar:hover,.multi-image,.video{
+		padding-top:20px;
+		padding-bottom:20px;
+	}		
+
+/*	when nav-bar or sub-baris hovered over background changes*/
+a.nav-bar:hover,a.sub-bar:hover{
+	background-color:#037EB0;
+}
+
+/* values in dropdown menu aligned vertically*/
+.dropdown {
+    display: inline-block;
+	}
+
+/* dropdown-content has a set position max width and text aligned
+	position is absolute so is not impacted by other changing variables
+	text is aligned to left of container
+	z index set to 1 so appears in front of other objects*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    max-width: 130px;
+    text-align:left;
+	z-index: 1;
+	}
+
+/* values in dropdown menu aligned vertically*/
+.dropdown:hover .dropdown-content {
+    display: block;
+	}
+
+/*	object will be floated to the right side of container
+	content aligned centrally by vertical-align */
+.multi-image,.video{
+	border-style:none;
+	min-width:200px;
+	float:right;
+	vertical-align:middle;
+	}
+	
+/*	padding of text set defining space filled by container text
+	border colour set with hex value
+	border style solid displays filled border
+	border width set to 2 pixels*/
+p.media-caption{
+	padding-bottom:10px;
+	border-bottom-color:#004b83;	
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+	}
+	
+/*	background image set with url */
+.multi-image{#004b83;
+	background-image:url("https://internal.cs.ncl.ac.uk/modules/2017-18/csc1026/bsl/css/420x370-box.png");
+	}
+	
+	/*	padding of text set defining space filled by container text
+	border colour set with hex value
+	border style solid displays filled border
+	border width set to 2 pixels*/
+.top-line{
+	border-top-color:#004b83;
+	border-top-style:solid;
+	border-top-width:10px;
+	padding-top:10px;
+	}
+	
+/*	background image set with url */
+.video{
+	background-image:url("https://internal.cs.ncl.ac.uk/modules/2017-18/csc1026/bsl/css/460x320-box.png");
+	}
+	
+/* Background image not repeated inside object */
+#logo,.multi-image,.video{
+	background-repeat:no-repeat;
+	}
+
+/*	background image set with url
+	Background image placed to right of container
+	padding of text set defining space filled by container text
+	margin(top) set to define spacing between object and other content*/	
+#logo{
+	background-image:url("https://internal.cs.ncl.ac.uk/modules/2017-18/csc1026/bsl/css/sign_language.png");
+	background-position:right;
+	margin-top:20px;
+	top:60px;
+	}
+	
+/*	border colour set with hex value
+	border style double displays filled border with 2 lines
+	border width set to 3 pixels
+	max width object can be is 520 pixels */
+#map{
+	border-color:#004b83;
+	border-style:double;
+	border-width:3px;
+	max-width: 520px;
+	}
+
+/*	margins set to define spacing between object and other content*/
+img.map-colors{
+	margin-right:10px;
+	}
+	
+/*	text set to uppercase
+	max width object can be is 150 pixels
+	max height object can be is 200 pixels
+	margins set to define spacing between object and other content
+	font size set at 10 pixels*/
+.sign-language-images{
+	text-transform:uppercase;
+	max-width:150px;
+	border-color:black;
+	border-width:1px;
+	max-height:200px;
+	margin:10px;
+	font-size:10px;
+	}
+
+/*	font size set at 14 pixels  */	
+.large-font{
+	font-size:14px;
+    }
+
+/*	font size set at 8 pixels  */	
+.small-font{
+	font-size:8px;
+    }
+
+/*	text colour set to red*/
+.red{
+	color:red;
+	}
+	
+/*	padding of text set defining space filled by container text*/
+#wiki-source{
+	padding-right:10px;
+	padding-bottom:15px;
+	}
